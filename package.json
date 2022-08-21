@@ -1,0 +1,25 @@
+{
+  "name": "realtime-pizza",
+  "version": "1.0.0",
+  "description": "This is our real time pizza app",
+  "main": "index.js",
+  "author": "Satya Prakash",
+  "scripts": {
+    "serve": "node server.js",
+    "dev": "nodemon server.js",
+    "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "npm run development -- --watch",
+    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "express-ejs-layouts": "^2.5.1"
+  },
+  "devDependencies": {
+    "add": "^2.0.6",
+    "nodeman": "^1.1.2",
+    "yarn": "^1.22.19"
+  }
+}
