@@ -8,75 +8,75 @@ body {
     color: $dark;
 }
 
-// nav li:last-child a {
-//     background: $primary;
+nav li:last-child a {
+    background: $primary;
 
-//     &:hover {
-//         background: $primary-hover;
-//     }
-// }
+    &:hover {
+        background: $primary-hover;
+    }
+}
 
-// nav li a {
-//     transition: $smooth;
+nav li a {
+    transition: $smooth;
 
-//     &:hover {
-//         color: $primary;
-//     }
-// }
+    &:hover {
+        color: $primary;
+    }
+}
 
-// section.hero {
-//     background: $secondary;
-// }
+section.hero {
+    background: $secondary;
+}
 
-// .size {
-//     background: $secondary;
-// }
+.size {
+    background: $secondary;
+}
 
-// .add-to-cart {
-//     border: 2px solid $primary;
-//     color: $primary;
-//     transition: $smooth;
+.add-to-cart {
+    border: 2px solid $primary;
+    color: $primary;
+    transition: $smooth;
 
-//     &:hover {
-//         background: $primary;
-//         border-color: $pure;
-//         color: $pure;
-//     }
+    &:hover {
+        background: $primary;
+        border-color: $pure;
+        color: $pure;
+    }
 
-//     &:focus {
-//         outline: none;
-//     }
-// }
+    &:focus {
+        outline: none;
+    }
+}
 
-// .btn-primary {
-//     background: $primary;
-//     transition: $smooth;
+.btn-primary {
+    background: $primary;
+    transition: $smooth;
 
-//     &:hover {
-//         background: $primary-hover;
-//     }
-// }
+    &:hover {
+        background: $primary-hover;
+    }
+}
 
-// section.cart {
-//     background: $secondary;
+section.cart {
+    background: $secondary;
 
-//     .amount {
-//         color: $primary;
-//     }
-// }
+    .amount {
+        color: $primary;
+    }
+}
 
-// section.login {
-//     background: $secondary;
-//     min-height: calc(100vh - 86px);
+section.login {
+    background: $secondary;
+    min-height: calc(100vh - 86px);
 
-//     a {
-//         color: $primary;
+    a {
+        color: $primary;
 
-//         &:hover {
-//             color: $primary-hover;
-//         }
-//     }
-// }
+        &:hover {
+            color: $primary-hover;
+        }
+    }
+}
 
 // .noty_theme__mint {
 //     border-radius: 50px !important;
