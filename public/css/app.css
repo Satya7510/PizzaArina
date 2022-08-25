@@ -40,11 +40,11 @@ section.hero {
   outline: none;
 }
 
-.btn-primary {
+.btn-primary[type=submit] {
   background: #FE5F1E;
   transition: all 0.3s ease-in-out;
 }
-.btn-primary:hover {
+.btn-primary[type=submit]:hover {
   background: #b23301;
 }
 

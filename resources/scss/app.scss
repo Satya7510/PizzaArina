@@ -48,7 +48,7 @@ section.hero {
     }
 }
 
-.btn-primary {
+.btn-primary[type="submit"] {
     background: $primary;
     transition: $smooth;
 
