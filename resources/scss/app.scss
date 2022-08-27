@@ -1,6 +1,6 @@
 @import './variables';
-// // @import '~noty/src/noty.scss';
-// // @import '~noty/src/themes/mint.scss';
+@import '~noty/src/noty.scss';
+@import '~noty/src/themes/mint.scss';
 
 body {
     font-family: 'Lato', sans-serif;
@@ -46,6 +46,7 @@ section.hero {
     &:focus {
         outline: none;
     }
+
 }
 
 .btn-primary[type="submit"] {
@@ -78,10 +79,10 @@ section.login {
     }
 }
 
-// .noty_theme__mint {
-//     border-radius: 50px !important;
-//     padding-left: 8px !important;
-// }
+.noty_theme__mint {
+    border-radius: 50px !important;
+    padding-left: 8px !important;
+}
 
 // a.link {
 //     color: $primary;
