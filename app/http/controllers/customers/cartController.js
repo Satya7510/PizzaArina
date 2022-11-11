@@ -7,6 +7,7 @@ function cartController() {
         },
         update(req, res) {
             if (!req.session.cart) {
+
                 req.session.cart = {
                     items: {},
                     totalQty: 0,

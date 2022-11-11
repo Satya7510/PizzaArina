@@ -29,3 +29,4 @@ addToCart.forEach((btn) => {
     })
 
 })
+
