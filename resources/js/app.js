@@ -1,5 +1,6 @@
 import axios from 'axios'
 import Noty from "noty";
+import initAdmin from './admin'
 let addToCart = document.querySelectorAll('.add-to-cart')
 
 function updateCart(pizza) {
@@ -30,3 +31,17 @@ addToCart.forEach((btn) => {
 
 })
 
+
+let adminAreaPath = window.location.pathname
+if (adminAreaPath.includes('admin')) {
+    initAdmin()
+}
+
+
+//remove alert message after x second
+const alertMsg = document.querySelector('#success-alert')
+if (alertMsg) {
+    setTimeout(() => {
+        alertMsg.remove()
+    }, 2000)
+}
