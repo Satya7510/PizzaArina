@@ -1,7 +1,6 @@
 const order = require('../../../models/order')
 
 function orderController() {
-    //initAdmin();
     return {
         async index(req, res) {
             try {
