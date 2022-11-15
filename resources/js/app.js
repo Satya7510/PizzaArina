@@ -33,10 +33,10 @@ addToCart.forEach((btn) => {
 })
 
 
-let adminAreaPath = window.location.pathname
-if (adminAreaPath.includes('admin')) {
-    initAdmin()
-}
+// let adminAreaPath = window.location.pathname
+// if (adminAreaPath.includes('admin')) {
+//     initAdmin()
+// }
 
 
 //remove alert message after x second
@@ -82,3 +82,33 @@ function updateStatus(order) {
 }
 
 updateStatus(order);
+
+
+
+//socket
+let socket = io()
+initAdmin(socket)
+// join
+if (order) {
+    socket.emit('join', `order_${order._id}`)
+}
+
+let adminAreaPath = window.location.pathname
+console.log(adminAreaPath)
+if (adminAreaPath.includes('admin')) {
+    initAdmin(socket)
+    socket.emit('join', 'adminRoom')
+}
+
+socket.on('orderUpdate', (data) => {
+    const updateOrder = { ...order }
+    updateOrder.updatedAt = moment().format()
+    updateOrder.status = data.status
+    updateStatus(updateOrder)
+    new Noty({
+        type: "success",
+        timeout: 1000,
+        progressBar: false,
+        text: "Order Updated"
+    }).show();
+})
