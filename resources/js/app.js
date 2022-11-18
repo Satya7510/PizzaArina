@@ -87,7 +87,6 @@ updateStatus(order);
 
 //socket
 let socket = io()
-initAdmin(socket)
 // join
 if (order) {
     socket.emit('join', `order_${order._id}`)
